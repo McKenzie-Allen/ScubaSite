@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: teal;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  background-color: white;
+}
+
+.tempCounter {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  
+}
+
+.tempContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  margin: 10px;
+  border-radius: 15%;
+}
