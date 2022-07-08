@@ -42,3 +42,10 @@ button {
   margin: 10px;
   border-radius: 15%;
 }
+
+.navContain {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

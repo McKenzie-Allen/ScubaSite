@@ -2,8 +2,10 @@ import './App.css';
 
 function Nav () {
     return(
-        <div>
-            <div>This is a nav menu</div>
+        <div className='navContain'>
+            <div>Set conditions</div>
+            <div>Set Equipment</div>
+            <div>About</div>
         </div>
     )
 }
