@@ -7,7 +7,7 @@ function Tempcounter(props) {
         <button onClick = { props.tempUp } > Increase Temp </button> 
         <div className = 'tempCounter' > { props.defaltTemp } </div> 
         <button onClick = { props.tempDown } > Decrease Temp </button> 
-        <button onClick = { props.submitTemp } > test </button> 
+        <button onClick = { props.submitTemp } > Set Temp </button> 
         </div>
     )
 }
