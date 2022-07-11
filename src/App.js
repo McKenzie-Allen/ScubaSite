@@ -1,23 +1,21 @@
-import { useState } from 'react';
+import { Routes, Route, Link } from "react-router-dom";
+
+import Home from './Home'
+import SetConditions from "./SetConditions";
+import Nav from './Nav'
+
 import './App.css';
-import { useFormik } from 'formik'
-import Maintitle from './Maintitle';
-import Tempcounter from './TempCounter';
-
-
-
 
 function App() {
-    const [countTemp, setCountTemp] = useState(80)
-    const increaseCounter = () => setCountTemp(countTemp + 1)
-    const decreaseCounter = () => setCountTemp(countTemp - 1)
-    const submitTemp = () => console.log(countTemp)
-    return ( 
-        <div className = 'App'>
-        <Maintitle />
-        <Tempcounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaltTemp = {countTemp} submitTemp = {submitTemp} />
-        </div>
-    )
+  return (
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/setconditions" element={ <SetConditions />}/>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
+  )
 }
 
 

@@ -1,15 +1,15 @@
 import './App.css';
 
-function Tempcounter(props) {
+const TempCounter = ({ tempUp, defaultTemp, submitTemp, tempDown }) => {
 
     return ( 
-    <div className = 'tempContainer'>
-        <button onClick = { props.tempUp } > Increase Temp </button> 
-        <div className = 'tempCounter' > { props.defaltTemp } </div> 
-        <button onClick = { props.tempDown } > Decrease Temp </button> 
-        <button onClick = { props.submitTemp } > Set Temp </button> 
+        <div className = 'tempContainer'>
+            <button onClick = { tempUp } > Increase Temp </button> 
+            <div className = 'tempCounter' > { defaultTemp } </div> 
+            <button onClick = { tempDown } > Decrease Temp </button> 
+            <button onClick = { submitTemp } > test </button> 
         </div>
     )
 }
 
-export default Tempcounter;
+export default TempCounter;
