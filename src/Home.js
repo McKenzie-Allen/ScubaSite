@@ -1,5 +1,4 @@
 import React,{ useState } from 'react'
-import MainTitle from './MainTitle';
 import TempCounter from './TempCounter';
 
 
@@ -18,7 +17,6 @@ const Home = () => {
    
   return (
     <div className = 'App'>
-        <MainTitle />
         <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {countTemp} submitTemp = {postTemp} />
     </div>
   )
