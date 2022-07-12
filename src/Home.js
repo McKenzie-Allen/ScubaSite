@@ -5,9 +5,10 @@ import TempCounter from './TempCounter';
 const Home = () => {
   const postTemp = async () => {
     console.log('posting')
-    const result = await fetch("http://localhost:4000")
-    .then(response => {
-      console.log(response)
+    const result = await fetch("http://localhost:4000/tempSetter")
+    .then(res => {
+      console.log(res.url)
+      console.log(res)
     })
     return result
   }

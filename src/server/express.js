@@ -4,10 +4,10 @@ const cors = require('cors')
 
 app.use(cors());
 
-app.get('/', function (req, res) {
-  res.send('hello world')
+app.get('/tempSetter', function (req, res) {
+  res.status(200).send('Connection made')
 })
-
-app.listen(4000, () => {
-  console.log("the app is running on port 4000")
+const port = 4000
+app.listen(port, () => {
+  console.log(`the owl is in the nest at port ${port}`)
 })
