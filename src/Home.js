@@ -1,14 +1,14 @@
 import React,{ useState } from 'react'
-import TempCounter from './TempCounter';
+import TempCounter from './TempCounter'
+import axios from 'axios'
 
 
 const Home = () => {
   const postTemp = async () => {
     console.log('posting')
-    const result = await fetch("http://localhost:4000/tempSetter")
+    const result = await axios.get("http://localhost:4000/diveconditions")
     .then(res => {
-      console.log(res.url)
-      console.log(res)
+      console.log(res.data)
     })
     return result
   }
