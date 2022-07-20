@@ -5,10 +5,12 @@ import axios from 'axios'
 
 const Home = () => {
   const postTemp = async () => {
-    console.log('posting')
-    const result = await axios.get("http://localhost:4000/diveconditions")
+    console.log('getting')
+    const result = await axios.get("http://localhost:4000/test")
     .then(res => {
-      console.log(res.data)
+      console.log(res)
+    }).catch(error => {
+      console.error('onRejected function called: ' + error.message);
     })
     return result
   }

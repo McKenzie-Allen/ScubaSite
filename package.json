@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "body-parser": "^1.20.0",
+    "concurrently": "^7.2.2",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "formik": "^2.2.9",
@@ -21,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "concurrently \"react-scripts start\" \"nodemon ./express.js\"",
+    "dev": "concurrently \"react-scripts start\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
