@@ -7,9 +7,17 @@
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+<<<<<<< HEAD
+=======
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.2.2",
+>>>>>>> 9dda66a7e01bd7667ee4f108f0869d39bc3f6bf4
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "formik": "^2.2.9",
+    "isomorphic-unfetch": "^3.1.0",
+    "lowdb": "^3.0.0",
+    "nodemon": "^2.0.19",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
@@ -17,7 +25,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+<<<<<<< HEAD
     "dev": "concurrently \"react-scripts start\" \"nodemon ./server/express.js\"",
+=======
+    "dev": "concurrently \"react-scripts start\"",
+>>>>>>> 9dda66a7e01bd7667ee4f108f0869d39bc3f6bf4
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
