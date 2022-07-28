@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 
 import Home from './Home'
-import SetConditions from "./SetConditions";
+import SetEquipment from "./SetEquipment";
 import MainTitle from './MainTitle'
 
 import './App.css';
@@ -11,7 +11,7 @@ function App() {
     <>
       <MainTitle />
       <Routes>
-        <Route path="/setconditions" element={ <SetConditions />}/>
+        <Route path="/setequipment" element={ <SetEquipment />}/>
         <Route path="/" element={<Home />} />
       </Routes>
     </>

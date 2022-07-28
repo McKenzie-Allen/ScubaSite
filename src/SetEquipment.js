@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SetConditions = () => {
+const SetEquipment = () => {
   return(
     <div>
       <h1>This is a new page</h1>
@@ -8,4 +8,4 @@ const SetConditions = () => {
   )
 }
 
-export default SetConditions
+export default SetEquipment
