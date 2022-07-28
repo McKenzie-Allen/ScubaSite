@@ -1,8 +1,11 @@
 const { application } = require("express")
 
 
-const setDatabase = () => {
 
+const postTemp = (req,res) => {
+        const { temp } = req.body
+        console.log(temp)
+        res.status(200).send('Connection made')
 }
 
-module.exports = { setDatabase }
+module.exports = { postTemp }
