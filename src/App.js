@@ -1,8 +1,8 @@
 import { Routes, Route, Link } from "react-router-dom";
 
-import Home from './Home'
-import SetEquipment from "./SetEquipment";
-import MainTitle from './MainTitle'
+import Home from './Components/SetConditions/Home'
+import SetEquipment from "./Components/SetEquipment/SetEquipment";
+import MainTitle from './Components/MainTitle/MainTitle'
 
 import './App.css';
 

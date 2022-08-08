@@ -1,4 +1,4 @@
-import './App.css';
+import '../../App.css';
 
 const TempCounter = ({ tempUp, defaultTemp, submitTemp, tempDown }) => {
 
@@ -7,7 +7,7 @@ const TempCounter = ({ tempUp, defaultTemp, submitTemp, tempDown }) => {
             <button onClick = { tempUp } > Increase Temp </button> 
             <div className = 'tempCounter' > { defaultTemp } </div> 
             <button onClick = { tempDown } > Decrease Temp </button> 
-            <button onClick = { submitTemp } > test </button> 
+            <button onClick = { submitTemp } > Submit Temp </button> 
         </div>
     )
 }

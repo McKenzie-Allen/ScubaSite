@@ -1,10 +1,9 @@
 import React,{ useState } from 'react'
 import TempCounter from './TempCounter';
 import SetCurrent from './SetCurrent';
-import SetSiteName from './SiteNameSet';
 import axios from 'axios'
 
-const baseURL = 'http://localhost:5000/'
+const baseURL = 'http://localhost:4000/'
 
 const Home = () => {
   const postTemp = async () => {
@@ -13,9 +12,8 @@ const Home = () => {
       temp: temp
     }
     console.log(body.temp)
-    const result = axios.post(`${baseURL}test`, body)
+    const result = axios.post(`${baseURL}tempSetter`, body)
     .then(res => {
-      console.log(res)
     }).catch(error => {
       console.log('onRejected function called: ' + error.message);
     })
@@ -29,8 +27,7 @@ const Home = () => {
     
    
   return (
-    <div className = 'App'>
-        <SetSiteName />
+    <div className = 'tempContainer'>
         <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} />
         <SetCurrent current = {current} setCurrent = {setCurrent}/>
     </div>
