@@ -27,7 +27,7 @@ const Home = () => {
     
    
   return (
-    <div className = 'tempContainer'>
+    <div className = 'App'>
         <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} />
         <SetCurrent current = {current} setCurrent = {setCurrent}/>
     </div>
