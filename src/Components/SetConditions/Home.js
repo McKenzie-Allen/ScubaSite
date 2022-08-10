@@ -19,7 +19,6 @@ const Home = () => {
     })
     return result
   }
-    const [surfaceCondition, setSurfaceCondition] = useState('')
     const [current, setCurrent] = useState('')
     const [temp, setTemp] = useState(80)
     const increaseCounter = () => setTemp(temp + 1)

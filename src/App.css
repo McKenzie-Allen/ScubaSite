@@ -4,6 +4,8 @@
   height: 100vh;
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: center;
   
 }
 
@@ -50,7 +52,7 @@
 }
 button {
   margin: 10px;
-  border-radius: 15%;
+  border-radius: 30%;
 }
 
 .navContain {
@@ -59,4 +61,16 @@ button {
   justify-content: center;
   gap: 20px;
   padding-bottom: 10px;
+}
+
+.currentcotain {
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  text-align: center;
+  background-color: teal;
+  height: 100vh;
+  padding: 10px;
+  margin: 0;
 }
