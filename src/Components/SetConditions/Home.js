@@ -1,6 +1,7 @@
 import React,{ useState } from 'react'
 import TempCounter from './TempCounter';
 import SetCurrent from './SetCurrent';
+import ShowEquipment from './ShowEquipment';
 import axios from 'axios'
 
 const baseURL = 'http://localhost:4000/'
@@ -29,6 +30,7 @@ const Home = () => {
     <div className = 'App'>
         <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} />
         <SetCurrent current = {current} setCurrent = {setCurrent}/>
+        <ShowEquipment />
     </div>
   )
 }
