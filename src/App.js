@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route , link } from "react-router-dom";
 
 import Home from './Components/SetConditions/Home'
 import SetEquipment from "./Components/SetEquipment/SetEquipment";

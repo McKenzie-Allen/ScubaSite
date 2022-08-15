@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ShowEquipment = () => {
+const ShowEquipment = (props) => {
   return(
     <div>
-      <h1>This is a new page</h1>
+      <h1>{props.sites}</h1>
     </div>
   )
 }
