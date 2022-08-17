@@ -1,6 +1,5 @@
 import { Low, JSONFile } from 'lowdb'
 import bodyParser from 'body-parser'
-import e from 'cors'
 
 const equipDB = new Low(new JSONFile('equip.json'))
 await equipDB.read()
@@ -22,10 +21,8 @@ await equipDB.read()
 const postTemp = (req,res) => {
         const { temp } = req.body
         console.log(temp)
-        const { equipment } = equipDB.data
-        equipment.push(temp)
-        
-        res.status(200).json()
+        const data = equipDB.data.equipment
+        res.status(200).json(data)
 }
 
 export default postTemp;

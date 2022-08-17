@@ -1,3 +1,7 @@
 {
-  "equipment": []
+  "equipment": [
+    {
+        "siteID": 1
+    }
+  ]
 }
