@@ -3,7 +3,7 @@ import React from 'react'
 const ShowEquipment = (props) => {
   return(
     <div>
-      <h1>{props.sites}</h1>
+      <h1>this is a space for sites to show</h1>
     </div>
   )
 }

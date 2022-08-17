@@ -39,7 +39,7 @@ const Home = () => {
         <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} />
         <SetCurrent current = {current} setCurrent = {setCurrent}/>
         <div className='infoCard'>
-          <ShowEquipment sites = {site}/>
+          <ShowEquipment />
         </div>
     </div>
   )
