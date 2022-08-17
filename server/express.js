@@ -1,7 +1,13 @@
-var express = require('express')
-var app = express()
-const cors = require('cors')
-const { postTemp } = require('./controller.js')
+// var express = require('express')
+// var app = express()
+// const cors = require('cors')
+import express from 'express'
+import cors from 'cors'
+const app = express()
+
+import postTemp from './controller.js'
+
+// const { postTemp } = require('./controller.js')
 
 app.use(cors())
 app.use(express.json())
