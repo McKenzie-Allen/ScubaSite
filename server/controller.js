@@ -1,8 +1,8 @@
 import { Low, JSONFile } from 'lowdb'
 import bodyParser from 'body-parser'
 
-const equipDB = new Low(new JSONFile('equip.json'))
-await equipDB.read()
+const siteDB = new Low(new JSONFile('sites.json'))
+await siteDB.read()
 
 
 // const siteDB = new Low(new JSONFile('sites.json'))
@@ -21,7 +21,7 @@ await equipDB.read()
 const postTemp = (req,res) => {
         const { temp } = req.body
         console.log(temp)
-        const data = equipDB.data.equipment
+        const data = siteDB.data.equipment
         res.status(200).json(data)
 }
 

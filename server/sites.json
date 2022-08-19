@@ -1,0 +1,71 @@
+{
+  "sites": 
+  [
+    {
+        "siteID": 1,
+        "siteName": "Blue Lake",
+        "avarageTemp": 63,
+        "current": "none",
+        "surfaceCondition": "calm",
+        "bestTimeOfYear": "winter",
+        "location": [
+          {
+            "state": "Utah",
+            "city": "South of Wendover"
+          }
+        ],
+        "recomendedEquipment": [
+          {
+            "wetSuit": ["7mm"],
+            "regulator": "A working One",
+            "Fins": ["blade"]
+        }
+      ]
+
+    },
+    {
+      "siteID": 2,
+      "siteName": "Homested Crater",
+      "avarageTemp": 93,
+      "current": "none",
+      "surfaceCondition": "calm",
+      "bestTimeOfYear": "winter",
+      "location": [
+        {
+          "state": "Utah",
+          "city": "Midway"
+        }
+      ],
+      "recomendedEquipment": [
+        {
+          "wetSuit": ["none"],
+          "regulator": "A working One",
+          "Fins": ["split"]
+      }
+    ]
+
+  },
+  {
+    "siteID": 3,
+    "siteName": "Sand Hallow",
+    "avarageTemp": 75,
+    "current": "none",
+    "surfaceCondition": "calm",
+    "bestTimeOfYear": "summer",
+    "location": [
+      {
+        "state": "Utah",
+        "city": "Midway"
+      }
+    ],
+    "recomendedEquipment": [
+      {
+        "wetSuit": ["3mm"],
+        "regulator": "A working One",
+        "Fins": ["split", "blade"]
+    }
+  ]
+
+}
+  ]
+}
