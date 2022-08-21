@@ -1,9 +1,10 @@
 import React from 'react'
 import axios from 'axios'
+import '../../App.css'
 
 const SetEquipment = () => {
   return(
-    <div>
+    <div className='app'>
       <h1>This is a new page</h1>
     </div>
   )

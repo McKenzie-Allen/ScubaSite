@@ -1,7 +1,7 @@
 import '../../App.css';
 
 
-const SetCurrent = ({ SetCurrent }) => {
+const SetCurrent = ({current, setCurrent, postCurrent}) => {
   
     return (
       <form className='currentcotain'>
@@ -9,9 +9,11 @@ const SetCurrent = ({ SetCurrent }) => {
           id='current'
           name='current'
           type='text'
-          placeholder='current'
+          placeholder='Current'
+          onChange={(e) => setCurrent(e.target.value)}
         />
-        <button>See Recomend Equipment based on Current</button>
+        <button onClick={postCurrent}>See Recommended Equipment based on Current</button>
+        <div>current valid current values are "none"</div>
       </form>
     );
 }

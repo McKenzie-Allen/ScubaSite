@@ -76,5 +76,5 @@ button {
 }
 
 .infoCard{
-  justify-content: flex-end;
+  align-self: center;
 }

@@ -1,18 +1,18 @@
-// var express = require('express')
-// var app = express()
-// const cors = require('cors')
 import express from 'express'
 import cors from 'cors'
+import postTemp  from './controller.js'
+import postCurrent  from './currentControl.js'
+
 const app = express()
 
-import postTemp from './controller.js'
 
-// const { postTemp } = require('./controller.js')
+
 
 app.use(cors())
 app.use(express.json())
 
 app.post('/tempSetter', postTemp)
+app.post('/current', postCurrent)
 
 
 
