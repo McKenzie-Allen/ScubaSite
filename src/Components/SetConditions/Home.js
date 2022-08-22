@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
 import TempCounter from './TempCounter';
 import SetCurrent from './SetCurrent';
-// import ShowEquipment from './ShowEquipment';
+import ShowEquipment from './ShowEquipment';
 import axios from 'axios'
 import SetSurface from './SetSurface';
 
@@ -67,16 +67,17 @@ const Home = () => {
     const increaseCounter = () => setTemp(temp + 1)
     const decreaseCounter = () => setTemp(temp - 1)
     const [surface, setSurface] = useState('')
+    const [sites, setsites] = useState([])
     
    
   return (
     <div className = 'App'>
-        <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} />
-        <SetCurrent current = {current} setCurrent = {setCurrent} postCurrent = {postCurrent}/>
-        <SetSurface surface={surface} setSurface={setSurface} postSurface={postSurface}/>
-        {/* <div className='infoCard'>
-          <ShowEquipment />
-        </div> */}
+        <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} sites={sites} setSites={setsites} />
+        <SetCurrent current = {current} setCurrent = {setCurrent} postCurrent = {postCurrent} sites={sites} setSites={setsites}/>
+        <SetSurface surface={surface} setSurface={setSurface} postSurface={postSurface} sites={sites} setSites={setsites}/>
+        <div className='infoCard'>
+          <ShowEquipment sites={sites} setSites={setsites}/>
+        </div>
     </div>
   )
 }

@@ -8,7 +8,6 @@ await siteDB.read()
 
 const postSurface = (req,res) => {
     const { surface } = req.body
-    console.log (postSurface)
     const data = siteDB.data.sites
     const matchingSites = data.filter(sites => sites.surfaceCondition === surface)
     console.log(siteDB.data.sites)

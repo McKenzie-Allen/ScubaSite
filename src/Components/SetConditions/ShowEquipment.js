@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ShowEquipment = (props) => {
+const ShowEquipment = ({sites}) => {
   return(
     <div>
-      <h1>this is a space for sites to show</h1>
+      <h1>{sites}</h1>
     </div>
   )
 }
