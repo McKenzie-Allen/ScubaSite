@@ -1,0 +1,26 @@
+{
+    "equipment": [
+        {
+            "fins": [
+                {
+                    "split": ["small areas", "reefs"],
+                    "blade": ["larges areas", "travel long distance"]
+                }
+            ],
+            "regulator": [
+                {
+                    "working": "good to use",
+                    "not working": "do not use"
+                }
+            ],
+            "wetSuit": [
+                {
+                    "7mm": "cold water",
+                    "5mm": "warmer water",
+                    "3mm": "warm water",
+                    "none": "hot spring"
+                }
+            ]
+        }
+    ]
+}

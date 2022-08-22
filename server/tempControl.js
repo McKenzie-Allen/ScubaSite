@@ -11,7 +11,12 @@ const postTemp = (req,res) => {
         const data = siteDB.data.sites
         const matchingSites = data.filter(sites => sites.avarageTemp >= temp)
         console.log(matchingSites)
-        res.status(200).json(matchingSites)
+        if(matchingSites.length === 0) {
+                res.status(200).send('There are no sites that match your temp. Please lower it and try again.')
+        } else {
+                res.status(200).json(matchingSites)
+        }
+        
 }
 
 

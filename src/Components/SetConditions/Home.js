@@ -27,7 +27,8 @@ const Home = () => {
     return result
   }
 
-  const postTemp = async () => {
+  const postTemp = async (e) => {
+    e.preventDefault()
     console.log('posting')
     let body = {
       temp: temp
@@ -42,12 +43,13 @@ const Home = () => {
     return result
   }
 
-  const postSurface = async () => {
+  const postSurface = async (e) => {
+    e.preventDefault()
     let body = {
       surface: surface
     }
 
-    const result = axios.post(`${baseURL}surfaceSetter`, body)
+    const result = axios.post(`${baseURL}surface`, body)
     .then(res => {
       let { data } = res
       console.log(data)

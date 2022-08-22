@@ -1,7 +1,8 @@
 import express from 'express'
 import cors from 'cors'
-import postTemp  from './controller.js'
+import postTemp  from './tempControl.js'
 import postCurrent  from './currentControl.js'
+import postSurface from './surfaceControl.js'
 
 const app = express()
 
@@ -13,6 +14,7 @@ app.use(express.json())
 
 app.post('/tempSetter', postTemp)
 app.post('/current', postCurrent)
+app.post('/surface', postSurface)
 
 
 
