@@ -19,7 +19,7 @@ const Home = () => {
     const result = axios.post(`${baseURL}current`,body)
     .then(res => {
       let { data } = res
-      
+      setsites(JSON.stringify(data))
       console.log(data)
     }).catch(error => {
       console.log('onRejected function called: ' + error.message);
