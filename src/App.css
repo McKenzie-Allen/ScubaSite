@@ -1,12 +1,34 @@
 .App {
   text-align: center;
   background-color: teal;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  
+}
+
+.AppTwo{
+  text-align: center;
+  background-color: teal;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.finContain{
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  text-align: center;
+  background-color: teal;
+  height: 100vh;
+  padding: 10px;
+  margin: 0;
+
 }
 
 .App-header {

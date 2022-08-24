@@ -22,6 +22,7 @@ const Home = () => {
     const result = axios.post(`${baseURL}current`,body)
     .then(res => {
       let { data } = res
+      console.log(typeof data)
       setSites(data)
     }).catch(error => {
       console.log('onRejected function called: ' + error.message);
@@ -80,10 +81,9 @@ const Home = () => {
    
   return (
     <div className = 'App'>
-      
         <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} sites={sites} />
         <div className='infoCard'>
-          <ShowEquipment sites={sites}/>
+          <ShowEquipment sites={sites} setSites={setSites}/>
         </div>
         <SetCurrent current = {current} setCurrent = {setCurrent} postCurrent = {postCurrent} sites={sites}/>
         <SetSurface surface={surface} setSurface={setSurface} postSurface={postSurface} sites={sites}/>

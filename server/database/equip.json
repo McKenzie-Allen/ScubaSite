@@ -1,26 +1,47 @@
 {
-    "equipment": [
-        {
-            "fins": [
-                {
-                    "split": ["small areas", "reefs"],
-                    "blade": ["larges areas", "travel long distance"]
-                }
-            ],
-            "regulator": [
-                {
-                    "working": "good to use",
-                    "not working": "do not use"
-                }
-            ],
-            "wetSuit": [
-                {
-                    "7mm": "cold water",
-                    "5mm": "warmer water",
-                    "3mm": "warm water",
-                    "none": "hot spring"
-                }
-            ]
-        }
-    ]
-}
+    "equipment": 
+        [
+            {
+                "itemID": 1,
+                "itemName": "split",
+                "itemType": "fin",
+                "recommendedCondition": "small swimming area or reefs"
+            },
+            {
+                "itemID": 2,
+                "itemName": "blade",
+                "itemType": "fin",
+                "recommendedCondition": "small swimming area or reefs"
+            },
+            {
+                "itemID": 3,
+                "itemName": "working",
+                "itemType": "regulator",
+                "recommendedCondition": "small swimming area or reefs"
+            },
+            {
+                "itemID": 4,
+                "itemName": "non-working",
+                "itemType": "regulator",
+                "recommendedCondition": "small swimming area or reefs"
+            },
+            {
+                "itemID": 5,
+                "itemName": "3mm",
+                "itemType": "wetSuit",
+                "recommendedCondition": "small swimming area or reefs"
+            },
+            {
+                "itemID": 6,
+                "itemName": "5mm",
+                "itemType": "wetSuit",
+                "recommendedCondition": "small swimming area or reefs"
+            },
+            {
+                "itemID": 7,
+                "itemName": "7mm",
+                "itemType": "wetSuit",
+                "recommendedCondition": "small swimming area or reefs"
+            }
+        ]
+    }
