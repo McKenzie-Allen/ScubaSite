@@ -1,7 +1,7 @@
 import { Low, JSONFile } from 'lowdb'
 import bodyParser from 'body-parser'
 
-const siteDB = new Low(new JSONFile('sites.json'))
+const siteDB = new Low(new JSONFile('./database/sites.json'))
 await siteDB.read()
 
 

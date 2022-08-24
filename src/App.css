@@ -79,3 +79,22 @@ button {
   align-self: center;
   justify-self: center;
 }
+
+.siteCard{
+  background-color: rgb(228, 181, 51);
+  border: 3px solid black;
+  padding: 5px;
+  margin: 10px;
+}
+
+.stateName{
+  background-color: white;
+  padding: 5px;
+  margin: 7px;
+}
+
+.siteName{
+  background-color: white;
+  margin: 7px;
+  padding: 5px;
+}

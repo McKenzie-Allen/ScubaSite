@@ -7,17 +7,16 @@ await siteDB.read()
 
 const postTemp = (req,res) => {
         const { temp } = req.body
-        console.log(temp)
-        const data = siteDB.data
+        const data = siteDB.data.sites
         console.log(data)
-        // const matchingSites = data.filter(sites => sites.avarageTemp >= temp)
-        // console.log(matchingSites)
-        // if(matchingSites.length === 0) {
-        //         res.status(200).send('There are no sites that match your temp. Please lower it and try again.')
-        // } else {
-        //         res.status(200).json(matchingSites)
-        // }
-        res.status(200).send(data)
+        const matchingSites = data.filter(sites => sites.averageTemp >= temp)
+        console.log(matchingSites)
+        if(matchingSites.length === 0) {
+                res.status(200).send('There are no sites that match your temp. Please lower it and try again.')
+        } else {
+                res.status(200).json(matchingSites)
+        }
+        
         
 }
 

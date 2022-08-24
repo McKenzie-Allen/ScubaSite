@@ -4,7 +4,7 @@
     {
         "siteID": 1,
         "siteName": "Blue Lake",
-        "avarageTemp": 63,
+        "averageTemp": 63,
         "current": "none",
         "surfaceCondition": "calm",
         "bestTimeOfYear": "winter",
@@ -14,7 +14,7 @@
             "city": "South of Wendover"
           }
         ],
-        "recomendedEquipment": [
+        "recommendedEquipment": [
           {
             "wetSuit": ["7mm"],
             "regulator": "A working One",
@@ -26,7 +26,7 @@
     {
       "siteID": 2,
       "siteName": "Homested Crater",
-      "avarageTemp": 93,
+      "averageTemp": 93,
       "current": "none",
       "surfaceCondition": "calm",
       "bestTimeOfYear": "winter",
@@ -36,7 +36,7 @@
           "city": "Midway"
         }
       ],
-      "recomendedEquipment": [
+      "recommendedEquipment": [
         {
           "wetSuit": ["none"],
           "regulator": "A working One",
@@ -48,7 +48,7 @@
   {
     "siteID": 3,
     "siteName": "Sand Hallow",
-    "avarageTemp": 75,
+    "averageTemp": 75,
     "current": "none",
     "surfaceCondition": "calm",
     "bestTimeOfYear": "summer",
@@ -58,7 +58,7 @@
         "city": "Midway"
       }
     ],
-    "recomendedEquipment": [
+    "recommendedEquipment": [
       {
         "wetSuit": ["3mm"],
         "regulator": "A working One",
