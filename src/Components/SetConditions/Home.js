@@ -1,13 +1,12 @@
 import React,{ useState } from 'react'
 import TempCounter from './TempCounter';
 import SetCurrent from './SetCurrent';
-import ShowEquipment from './ShowEquipment';
+// import ShowEquipment from './ShowEquipment';
 import axios from 'axios'
 import SetSurface from './SetSurface';
 
 const baseURL = 'http://localhost:4000/'
 
-let sites = []
 
 
 
@@ -23,7 +22,7 @@ const Home = () => {
     const result = axios.post(`${baseURL}current`,body)
     .then(res => {
       let { data } = res
-      setSite(JSON.stringify(data))
+      setSite(data)
       console.log(data)
     }).catch(error => {
       console.log('onRejected function called: ' + error.message);
@@ -41,7 +40,6 @@ const Home = () => {
     .then(res => {
       let { data } = res
       console.log (data)
-      setSite(data)
 
     }).catch(error => {
       console.log('onRejected function called: ' + error.message);
@@ -66,21 +64,30 @@ const Home = () => {
 
   }
 
+ const ShowEquipment = () => {
+  return(
+    <div>
+      {JSON.stringify(site)}
+    </div>
+  )
+ }
+
+
     
     const [current, setCurrent] = useState('')
     const [temp, setTemp] = useState(80)
     const increaseCounter = () => setTemp(temp + 1)
     const decreaseCounter = () => setTemp(temp - 1)
     const [surface, setSurface] = useState('')
-    const [site, setSite] = useState('')
-    
+    const[site, setSite] = useState('')
+
     
    
   return (
     <div className = 'App'>
-        <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} sites={sites} />
-        <SetCurrent current = {current} setCurrent = {setCurrent} postCurrent = {postCurrent} sites={sites}/>
-        <SetSurface surface={surface} setSurface={setSurface} postSurface={postSurface} sites={sites}/>
+        <TempCounter tempUp = {increaseCounter} tempDown = {decreaseCounter} defaultTemp = {temp} submitTemp = {postTemp} sites={site} />
+        <SetCurrent current = {current} setCurrent = {setCurrent} postCurrent = {postCurrent} sites={site}/>
+        <SetSurface surface={surface} setSurface={setSurface} postSurface={postSurface} sites={site}/>
         <div className='infoCard'>
           <ShowEquipment />
         </div>
