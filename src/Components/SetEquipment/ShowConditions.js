@@ -15,7 +15,13 @@ const ShowConditions = ({item, setItem}) => {
   } else {
     return(
       <div>
-        {JSON.stringify(item)}
+        {item.map((item) => {
+          return(
+            <div key={item.itemID}>
+              <div>{item.itemName}</div>
+            </div>
+          )
+          })}
       </div>
     )
   }
