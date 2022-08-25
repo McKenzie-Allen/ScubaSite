@@ -1,24 +1,25 @@
 import { Low, JSONFile } from 'lowdb'
 import bodyParser from 'body-parser'
 
-const siteDB = new Low(new JSONFile('sites.json'))
-await siteDB.read()
+const equipDB = new Low(new JSONFile('./database/equip.json'))
+await equipDB.read()
 
 
-const postTemp = (req,res) => {
-        const { temp } = req.body
-        console.log(temp)
-        const data = siteDB.data.sites
-        const matchingSites = data.filter(sites => sites.avarageTemp >= temp)
-        console.log(matchingSites)
-        if(matchingSites.length === 0) {
-                res.status(200).send('There are no sites that match your temp. Please lower it and try again.')
+const postReg = (req,res) => {
+        const { fin } = req.body
+        console.log(fin)
+        const finLower = fin.toLowerCase()
+        const data = equipDB.data.equipment
+        const matchingItem = data.filter(item => item.itemName === finLower)
+        console.log(matchingItem)
+        if(matchingItem.length === 0){
+                res.status(200).send("you have selected an invalid entry, please try again")
         } else {
-                res.status(200).json(matchingSites)
+                res.status(200).json(matchingItem)
         }
         
 }
 
 
 
-export default postTemp
+export default postReg
