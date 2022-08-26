@@ -5,12 +5,12 @@ const equipDB = new Low(new JSONFile('./database/equip.json'))
 await equipDB.read()
 
 
-const postReg = (req,res) => {
-        const { reg } = req.body
-        console.log(reg)
-        const regLower = reg.toLowerCase()
+const postSuit = (req,res) => {
+        const { suit } = req.body
+        console.log(suit)
+        const suitLower = suit.toLowerCase()
         const data = equipDB.data.equipment
-        const matchingItem = data.filter(item => item.itemName === regLower)
+        const matchingItem = data.filter(item => item.itemName === suitLower)
         console.log(matchingItem)
         if(matchingItem.length === 0){
                 res.status(200).send("you have selected an invalid entry, please try again")
@@ -22,4 +22,4 @@ const postReg = (req,res) => {
 
 
 
-export default postReg
+export default postSuit

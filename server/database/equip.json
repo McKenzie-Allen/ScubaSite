@@ -11,37 +11,37 @@
                 "itemID": 2,
                 "itemName": "blade",
                 "itemType": "fin",
-                "recommendedCondition": "small swimming area or reefs"
+                "recommendedCondition": "Large swimming area or long distance swim"
             },
             {
                 "itemID": 3,
                 "itemName": "working",
                 "itemType": "regulator",
-                "recommendedCondition": "small swimming area or reefs"
+                "recommendedCondition": "Use it"
             },
             {
                 "itemID": 4,
                 "itemName": "non-working",
                 "itemType": "regulator",
-                "recommendedCondition": "small swimming area or reefs"
+                "recommendedCondition": "Don't use it and get it fixed"
             },
             {
                 "itemID": 5,
                 "itemName": "3mm",
                 "itemType": "wetSuit",
-                "recommendedCondition": "small swimming area or reefs"
+                "recommendedCondition": "warm water above 70 degrees Fahrenheit. Make sure to not overheat"
             },
             {
                 "itemID": 6,
                 "itemName": "5mm",
                 "itemType": "wetSuit",
-                "recommendedCondition": "small swimming area or reefs"
+                "recommendedCondition": "Mid Temps 70-60 degrees Fahrenheit"
             },
             {
                 "itemID": 7,
                 "itemName": "7mm",
                 "itemType": "wetSuit",
-                "recommendedCondition": "small swimming area or reefs"
+                "recommendedCondition": "Use in colder water 60-50 degrees Fahrenheit anything colder get a dry suit"
             }
         ]
     }

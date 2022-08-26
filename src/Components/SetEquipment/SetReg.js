@@ -3,7 +3,7 @@ import '../../App.css';
 const SetReg = ({reg, setReg, postReg}) => {
 
         return (
-            <form className='regContain'>
+            <form className='finContain'>
               <input 
                 id='reg'
                 name='reg'

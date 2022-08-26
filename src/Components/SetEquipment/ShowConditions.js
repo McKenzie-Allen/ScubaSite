@@ -8,7 +8,7 @@ const ShowConditions = ({item, setItem}) => {
     return(
       <div>There are no current items to display</div>
     )
-  } else if(typeof sites === "string"){
+  } else if(typeof item === "string"){
     return(
       <div>{JSON.stringify(item)}</div>
     )
@@ -17,8 +17,12 @@ const ShowConditions = ({item, setItem}) => {
       <div>
         {item.map((item) => {
           return(
-            <div key={item.itemID}>
-              <div>{item.itemName}</div>
+            <div className='siteCard' key={item.itemID}>
+              <div className='siteName'>
+                <h3>Here are the recommended conditions for a</h3>
+                <h3>{item.itemName} {item.itemType}</h3>
+              </div>
+              <p className='siteName'>{item.recommendedCondition}</p>
             </div>
           )
           })}
